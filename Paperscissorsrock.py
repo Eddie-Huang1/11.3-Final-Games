@@ -10,16 +10,16 @@ replay = "yes"
 words = ["paper", "scissors", "rock"]
 
 while replay.lower() == "yes":
-    print("Lets play paper scissors rock, best out of three")
+    print("Lets play paper scissors rock, best out of ten")
     print("You will be versing against the computer")
     userscore = 0
     robotscore = 0
     round_number = 1
     
-    while round_number <= 3:
+    while round_number <= 10:
         print(f"Round number: {round_number}")
         print("Choose a symbol")
-        player_symbol = input().lower()
+        player_symbol = input("").lower()
         
         if player_symbol in words:
             print("ROCK")
@@ -41,9 +41,9 @@ while replay.lower() == "yes":
                 print("You lose")
                 robotscore += 1
                 
-            print(f"Your score {userscore} vs Computer score {robotscore}")
+            print(f"Your total score: {userscore} vs Computer total score: {robotscore}")
             round_number += 1
         else:
             print("Put a symbol in.")
-            
+
     replay = input("Do you want to play again? (yes or no): ").lower()
