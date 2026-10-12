@@ -2,10 +2,6 @@
 import random
 
 # Variables
-high_score = 0
-userscore = 0
-robotscore = 0
-round_number = 1
 replay = "yes"
 words = ["paper", "scissors", "rock"]
 
