@@ -4,14 +4,14 @@ import random
 # Variables
 replay = "yes"
 words = ["paper", "scissors", "rock"]
-
+# While loop to make the replay work
 while replay.lower() == "yes":
     print("Lets play paper scissors rock, best out of ten")
     print("You will be versing against the computer")
     userscore = 0
     robotscore = 0
     round_number = 1
-    # While loop
+    # While loop to make 10 rounds
     while round_number <= 10:
         print(f"Round number: {round_number}")
         print("Choose a symbol")
@@ -25,7 +25,7 @@ while replay.lower() == "yes":
             # random.choice(words) makes the computer choice be random
             computer_symbol = random.choice(words)
             print(f"{player_symbol} vs {computer_symbol}")
-            
+            # The results of the battle
             if player_symbol == computer_symbol:
                 print("Tie")
             elif (player_symbol == "paper" and computer_symbol == "rock") or \
