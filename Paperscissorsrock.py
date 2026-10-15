@@ -11,8 +11,8 @@ while replay.lower() == "yes":
     userscore = 0
     robotscore = 0
     round_number = 1
-    # While loop to make 10 rounds
-    while round_number <= 10:
+    # For loop to make 10 rounds
+    for round_number in range(1, 11):
         print(f"Round number: {round_number}")
         print("Choose a symbol")
         player_symbol = input("").lower()
