@@ -10,7 +10,6 @@ while replay.lower() == "yes":
     print("You will be versing against the computer")
     userscore = 0
     robotscore = 0
-    round_number = 1
     # For loop to make 10 rounds
     for round_number in range(1, 11):
         print(f"Round number: {round_number}")
@@ -31,14 +30,13 @@ while replay.lower() == "yes":
             elif (player_symbol == "paper" and computer_symbol == "rock") or \
                  (player_symbol == "scissors" and computer_symbol == "paper") or \
                  (player_symbol == "rock" and computer_symbol == "scissors"):
-                print("You win!")
+                print("You win this round!")
                 userscore += 1
             else:
-                print("You lose")
+                print("You lose this round")
                 robotscore += 1
                 # F strings are there to put the scores in
             print(f"Your total score: {userscore} vs Computer total score: {robotscore}")
-            round_number += 1
         else:
             print("Put a symbol in.")
 # If replay is yes then it will restart
