@@ -47,8 +47,8 @@ while replay.lower() == "yes":
     else:
         print("It was a tie between you two")
 # If replay is yes then it will restart
-while replay != "yes" and replay != "no":
-    replay = input("Do you want to play again? (yes or no): ").lower()
-    
+    replay = ""
+    while replay != "yes" and replay != "no":
+        replay = input("Do you want to play again? (yes or no): ").lower()
     if replay != "yes" and replay != "no":
         print("Put yes or no")
