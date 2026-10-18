@@ -6,6 +6,7 @@ replay = "yes"
 words = ["paper", "scissors", "rock"]
 # While loop to make the replay work
 while replay.lower() == "yes":
+    print("Welcome!")
     print("Lets play paper scissors rock, best out of ten")
     print("You will be versing against the computer")
     userscore = 0
@@ -39,14 +40,14 @@ while replay.lower() == "yes":
             print(f"Your total score: {userscore} vs Computer total score: {robotscore}")
         else:
             print("Put a symbol in.")
-
+# Shows who the winner is
     if userscore > robotscore:
         print("VICTORY")
     elif robotscore > userscore:
         print("DEFEAT")
     else:
         print("It was a tie between you two")
-# If replay is yes then it will restart
+# Replay is empty because if it was yes or no then it won't work
     replay = ""
     while replay != "yes" and replay != "no":
         replay = input("Do you want to play again? (yes or no): ").lower()
