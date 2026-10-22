@@ -9,7 +9,7 @@ attempts = 6
 green = '\033[32m]'
 red = '\033[31m]'
 # Def function to make the wordle rounds work
-def wordle(words, attempts = 6):
+def wordle(attempts):
 # While loop to make the attempts work
     while attempts > 0:
         print("WORDLE")
@@ -18,11 +18,13 @@ def wordle(words, attempts = 6):
 guess = input("").upper()
 # Lens is to count how many letters there are
 if len(guess) == 5:
-    for i in guess():
-        
-else:
-    len(guess) != 5:
+    # This for s in guess is the function to code the color for the letters
+    # Guess is your input word
+    # The s is for the letters
+    for s in guess():
+        if guess == guess_word:
+            print(len(guess))
+            print(guess)
+    else:
+        len(guess) != 5
     print("Invalid, input a 5 letter word")
-# Correctly guessed the word in the attempts range
-if guess == guess_word:
-    print("CORRECT!")
